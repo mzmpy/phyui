@@ -1,0 +1,15 @@
+@defaultBackgroundColor: #FFFFFF;
+@defaultBorderColor: #d2d2d2;
+@borderHoverColor: #0091FF;
+
+.p-button {
+  background-color: @defaultBackgroundColor;
+  border: 1px solid @defaultBorderColor;
+  padding: 3px;
+  .p-button-content {
+    padding: 2px;
+  }
+  &:hover {
+    border-color: @borderHoverColor;
+  }
+}
