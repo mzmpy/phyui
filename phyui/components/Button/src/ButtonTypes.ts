@@ -1,11 +1,11 @@
 import type { ExtractPropTypes, PropType  } from 'vue'
 
-export type TButtonSize = 'lg' | 'md' | 'sm' | 'xs'
+export type TButtonSize = 'large' | 'medium' | 'small'
 
 export const buttonProps = {
   size: {
     type: String as PropType<TButtonSize>,
-    default: 'md'
+    default: 'medium'
   }
 } as const
 

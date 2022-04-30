@@ -14,7 +14,7 @@ export default defineComponent({
     return () => {
       return (
         <button type="button" class="p-button" onClick={onClick}>
-          <span class="p-button-content">{ctx.slots.default?.()}</span>
+          <span class={`p-button-content p-button-${props.size}`}>{ctx.slots.default?.()}</span>
         </button>
       )
     }

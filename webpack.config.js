@@ -11,9 +11,15 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
-        use: {
-          loader: 'babel-loader'
-        },
+        use: [
+          'babel-loader',
+          {
+            loader: "ts-loader",
+            options: {
+              transpileOnly: false
+            }
+          }
+        ],
         exclude: /node_modules/,
       },
       {
@@ -31,6 +37,7 @@ module.exports = {
     vue: 'vue'
   },
   output: {
+    clean: true,
     path: path.resolve(__dirname, 'dist'),
     filename: 'phyui.js',
     library: {

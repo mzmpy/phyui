@@ -7,7 +7,10 @@
     "jsx": "preserve",
     "sourceMap": true,
     "lib": ["esnext", "dom"],
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "declaration": true,
+    "declarationDir": "./dist/types"
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx"]
+  "include": ["phyui/**/*.ts", "phyui/**/*.d.ts", "phyui/**/*.tsx"],
+  "exclude": ["dist", "node_modules"]
 }
