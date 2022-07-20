@@ -16,9 +16,9 @@ module.exports = {
   'extends': 'eslint:recommended',
   'plugins': [
     'vue',
-    'eslint-plugin-vue'
+    '@typescript-eslint'
   ],
-  'parser': 'vue-eslint-parser',
+  'parser': '@typescript-eslint/parser',
   'rules': {
     'indent': ['error', 2, { 'SwitchCase': 1 }],
     'no-console': ['error']
